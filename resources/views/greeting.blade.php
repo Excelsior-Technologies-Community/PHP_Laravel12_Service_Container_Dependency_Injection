@@ -9,6 +9,7 @@
     <title>Laravel 12 Service Container & Dependency Injection</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
     <style>
         :root {
@@ -306,6 +307,35 @@
 </head>
 
 <body>
+
+    <!-- Header Navbar -->
+    <header style="background: #0f172a; border-bottom: 1px solid #1e293b; padding: 12px 30px;">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <a href="{{ route('greet.index') }}" style="font-size: 19px; font-weight: 800; display: flex; align-items: center; gap: 10px; color: #ffffff; text-decoration: none;">
+                <i class="bi bi-cpu-fill text-primary fs-4"></i>
+                <span>Laravel 12 <span class="text-primary">IoC & DI Studio</span></span>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="d-flex align-items-center gap-1 flex-wrap">
+                <a href="{{ route('greet.index') }}" class="btn btn-sm btn-primary">
+                    <i class="bi bi-chat-heart"></i> Greetings
+                </a>
+                <a href="{{ route('container.visualizer.index') }}" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-search text-info"></i> Visualizer Studio
+                </a>
+                <a href="{{ route('container.broadcast.index') }}" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-tags-fill text-warning"></i> Tagged Broadcast
+                </a>
+                <a href="{{ route('container.benchmark.index') }}" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-speedometer2 text-danger"></i> Lifecycle Lab
+                </a>
+                <a href="{{ route('container.pipeline.index') }}" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-diagram-3-fill text-success"></i> Pipeline Studio
+                </a>
+            </nav>
+        </div>
+    </header>
 
     <div class="container py-4">
 
